@@ -1,11 +1,37 @@
-import React from 'react'
+import React, { useState } from 'react';
+import {Button} from '../ButtonElements';
+import {HeroContainer, HeroBg, HeroContent, HeroH1, HeroBtnWrapper, ArrowForward, ArrowRight} from './HeroElements';
 
-const index = () => {
+
+const HeroSection = () => {
+
+    const [hover, setHover] = useState(false);
+
+    const onHover = () => {
+        setHover(!hover);
+    }
   return (
     <HeroContainer>
-        <VideoBg autoPlay loop muted src={Video} type='video/mp4'></>
+        <HeroBg>
+
+        </HeroBg>
+        <HeroContent>
+            <HeroH1>
+            LEARN, CREATE, AND CONQUER CODING!
+            </HeroH1>
+               
+                <HeroBtnWrapper>
+                    <Button to='register' 
+                    onMouseEnter={onHover}
+                    onMouseLeave={onHover}
+                    >
+                        Join now {hover ? <ArrowForward/>: <ArrowRight/>}
+                    </Button>
+                </HeroBtnWrapper>
+            
+        </HeroContent>
     </HeroContainer>
   )
 }
 
-export default index;
+export default HeroSection;
