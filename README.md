@@ -1,2 +1,2 @@
 # Ninja-Code
-This is online coding learning platform tailored to the needs of teenagers
+This is an online coding learning platform tailored to the needs of teenagers
