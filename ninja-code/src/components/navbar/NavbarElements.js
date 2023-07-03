@@ -91,9 +91,8 @@ export const NavBtn = styled.nav`
     display: flex;
     align-items: center;
 
-    @media screen and (max-width: 768px){
-        dipslay: none;
-
+    @media screen and (max-width:768px){
+        display: none;
     }
 `;
 
@@ -112,7 +111,7 @@ export const NavBtnLink = styled(LinkR)`
 
     &:hover{
         transition: all 0.2s ease-in-out;
-        background: #fff;
+        background: #F4D03F;
         color: #010606;
     }
 
