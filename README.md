@@ -1,10 +1,10 @@
-# About Ninja-Code
+# About Ninja-Code >>
 This online coding learning platform is specifically designed to cater to the requirements of teenagers who are eager to enhance their programming skills. 
 
-Disclaimer!
+Disclaimer! >>
 Through the tutorials from Brian Design at Youtube, I have gained valuable hands-on experience and a deeper understanding of React.js, which has enabled me to build my own website from scratch. This practical approach to learning has been immensely beneficial in my coding journey, as it allows me to apply the concepts I've learned in real-world projects. 
 
-Modules
+Modules>>
 After doing my research, I realized that most online coding websites are cool, but they've got some downsides. One big issue is the lack of personal feedback and mentorship. You're left hanging without anyone to guide you in real-time, and that can be frustrating. The other one is that not having a clear route map on what should he/she learn next.
 
 Another problem is the overwhelming choice of programming languages. It's like being stuck in a maze, not knowing where to start. Some folks don't even know how computers and the internet work, and that makes it even trickier.
