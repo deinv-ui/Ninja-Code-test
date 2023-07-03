@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import {SideBarContainer, Icon, CloseIcon} from './SideBarElements';
 
 const SideBar = () => {
     return(
@@ -6,7 +7,7 @@ const SideBar = () => {
             <Icon>
                 <CloseIcon/>
             </Icon>
-
+        
         </SideBarContainer>
 
 

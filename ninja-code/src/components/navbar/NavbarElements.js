@@ -17,7 +17,7 @@ export const Nav = styled.nav`
     @media screen and (max-width: 960px){
     transition: 0.7s all ease;
 }
-`
+`;
 export const NavbarContainer = styled.div`
 
     display: flex;
@@ -27,7 +27,7 @@ export const NavbarContainer = styled.div`
     width: 100%;
     max-width: 1100px;
     padding: 0 24px;
-`
+`;
 export const NavLogo = styled(LinkR)`
     color: #fff;
     justify-self: flex-start;
@@ -38,7 +38,7 @@ export const NavLogo = styled(LinkR)`
     margin-left: 15px;
     font=weight: bold;
     text-decoration: none;
-`
+`;
 
 export const MobileIcon = styled.div`
     //FOR MOBILE ICON no display on normal desktop view
@@ -55,7 +55,7 @@ export const MobileIcon = styled.div`
         cursor: pointer;
         color: #fff;
     }
-`
+`;
 export const NavMenu = styled.ul`
     // to display the list items in a row
     display: flex;
@@ -69,10 +69,10 @@ export const NavMenu = styled.ul`
     @media screen and (max-width:768px){
         display: none;
     }
-`
+`;
 export const NavItems = styled.li`
     height: 80px;
-`
+`;
 export const NavLinks = styled(LinkS)`
     color: #fff;
     display: flex;
@@ -95,7 +95,7 @@ export const NavBtn = styled.nav`
         dipslay: none;
 
     }
-`
+`;
 
 export const NavBtnLink = styled(LinkR)`
     border-radius: 50px;
@@ -116,4 +116,4 @@ export const NavBtnLink = styled(LinkR)`
         color: #010606;
     }
 
-`
+`;
