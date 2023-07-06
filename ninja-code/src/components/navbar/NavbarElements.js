@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import {Link as LinkR } from 'react-router-dom'
 import {Link as LinkS } from 'react-scroll'
 
+
 export const Nav = styled.nav`
     background: #000;
     display: flex;
@@ -39,6 +40,8 @@ export const NavLogo = styled(LinkR)`
     font=weight: bold;
     text-decoration: none;
 `;
+
+
 
 export const MobileIcon = styled.div`
     //FOR MOBILE ICON no display on normal desktop view

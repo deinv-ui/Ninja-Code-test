@@ -1,23 +1,39 @@
 import React from 'react';
-import { Button } from 'react-scroll';
+
+import {
+  InfoContainer,
+  InfoWrapper,
+  TextWrapper,
+  TopLine,
+  Heading,
+  Subtitle,
+  ImgWrap,
+  NavBtn,
+  NavBtnLink
+  
+} from './InfoElements';
 
 const InfoSection = () => {
   return (
     <>
-      <InfoContainer id={id}>
+      <InfoContainer>
         <InfoWrapper>
-          <InfoRow>
-            <Col1>
+          
               <TextWrapper>
-                <TopLine></TopLine>
-                <Heading></Heading>
-                <Subtitle></Subtitle>
-                <BtnWrap>
-                  <Button to='home'>Button</Button>
-                </BtnWrap>
-              </TextWrapper>
-            </Col1>
-          </InfoRow>
+                <TopLine>Customized roadmap that aligns with needs</TopLine>
+                <Heading>Personalized Learning</Heading>
+                
+                <Subtitle >Tailored pathways based on your unique skills and interests, ensuring a perfect alignment with your goals.</Subtitle>
+                
+                <NavBtn>
+                <NavBtnLink to="/register">Get Started!</NavBtnLink>
+                </NavBtn>
+                </TextWrapper>
+
+                <ImgWrap/>
+                
+              
+           
         </InfoWrapper>
       </InfoContainer>
     

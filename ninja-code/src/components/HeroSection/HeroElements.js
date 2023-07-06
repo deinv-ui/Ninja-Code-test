@@ -9,7 +9,7 @@ export const HeroContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding 0 30px;
-    height: 800px;
+    height: 600px;
     position: absolute;
     z-index: 1;
 
@@ -21,7 +21,7 @@ export const HeroBg = styled.div`
     background-size: cover; /* Adjust the image size to cover the container */
     background-position: center; 
     position: absolute;
-    margin-top: -150px;
+    margin-top: -100px;
     top: 0;
     right:0;
     bottom: 0;
@@ -44,13 +44,16 @@ export const HeroH1 = styled.h1`
     color: #000000;
     font-size: 58px;
     align-items: center;
-    margin-top: -270px;
+    margin-top: -200px;
 
     @media screen and (max-width: 768px){
+        // margin-left: 50px;
+        margin-top: -230px;
         font-size: 40px;
     }
 
     @media screen and (max-width: 480px){
+        
         font-size: 32px;
     }
 `
