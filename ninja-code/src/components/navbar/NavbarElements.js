@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import {Link as LinkR } from 'react-router-dom'
-import {Link as LinkS } from 'react-scroll'
+// import {Link as LinkS } from 'react-scroll'
 
 
 export const Nav = styled.nav`
@@ -76,7 +76,7 @@ export const NavMenu = styled.ul`
 export const NavItems = styled.li`
     height: 80px;
 `;
-export const NavLinks = styled(LinkS)`
+export const NavLinks = styled(LinkR)`
     color: #fff;
     display: flex;
     align-items: center;
@@ -87,6 +87,31 @@ export const NavLinks = styled(LinkS)`
 
     &.active{
         border-bottom: 3px solid #B533FF;
+    }
+`;
+
+export const NavRegister = styled(LinkR)`
+    font-size: 15px;
+    background: #F4D03F;
+    color: #010606;
+    display: flex;
+    align-items: center;
+    text-decorations: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+    
+    margin-left: 200px;
+    &.active{
+        border-bottom: 3px solid #B533FF;
+    }
+    &:hover{
+        transition: all 0.2s ease-in-out;
+        background: #C766FF;;
+        color: #fff;
+    }
+    @media screen and (max-width:768px){
+        display: none;
     }
 `;
 

@@ -1,16 +1,20 @@
 import React from 'react';
 import {FaBars} from 'react-icons/fa'
 import {Nav, NavbarContainer, NavLogo, MobileIcon, 
-  NavMenu, NavItems, NavLinks, NavBtn, NavBtnLink } from './NavbarElements';
-
+  NavMenu, NavItems, NavLinks, NavBtn, NavBtnLink, NavRegister } from './NavbarElements';
+import { animateScroll as scroll } from 'react-scroll';
 
 
 const Navbar = ({ toggle }) => {
+  const toggleHome = () => {
+   
+    scroll.scrollToTop();
+  };
   return (
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to='/'>
+          <NavLogo to='/'onClick={toggleHome}>
            NINJA CODE
           </NavLogo>
           <MobileIcon onClick={toggle}>
@@ -24,20 +28,23 @@ const Navbar = ({ toggle }) => {
             </NavItems>
 
             <NavItems>
-              <NavLinks to="courses">Courses</NavLinks>
+              <NavLinks to="/Course">Courses</NavLinks>
             </NavItems>
 
+            
             <NavItems>
               <NavLinks to="review">Review</NavLinks>
             </NavItems>
 
-            <NavItems>
-              <NavLinks to="register">Register</NavLinks>
-            </NavItems>
+            {/* <NavItems>
+              <NavRegister to="/Register">Register</NavRegister>
+            </NavItems> */}
           </NavMenu>
-
+          
+              <NavRegister to="/Register">Don't have an account?</NavRegister>
+           
           <NavBtn>
-            <NavBtnLink to="/login">Log In</NavBtnLink>
+            <NavBtnLink to="/Login">Log In</NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>

@@ -2,14 +2,16 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
-    min-height: 692px;
+    min-height: 100%;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     top: 0;
     z-index; 0;
-    overflow: hidden;
+    overflow-y: scroll; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Hide horizontal scrolling */
+
     background: linear-gradient(108deg, #8a63ff 0%, #c795ff 100%);
 
 `
@@ -27,7 +29,7 @@ export const Container = styled.div`
 
 export const Icon = styled(Link)`
         margin-left: 32px;
-        margin-top: 32px;
+        margin-top: 100px;
         text-decoration: none;
         color: #fff;
         font-weight: 700;
@@ -52,13 +54,14 @@ export const FormContent = styled.div`
 export const Form = styled.form`
         background: #010101;
         max-width: 400px;
-        height: 520px;
+        height: 750px;
         width: 100%;
         z-index: 1;
         display: grid;
         margin: 0 auto;
-        margin-top: -120px;
+        margin-top: 202px;
         padding: 80px 32px;
+        
         border-radius: 4px;
         box-shadow: 0 1px 3px rgba(0,0,0,0.9);
        
@@ -110,10 +113,8 @@ export const FormBtn = styled.button`
 
 export const Text = styled.span`
         text-align: center;
-        margin-top; 35px;
         color: #fff;
         font-size: 14px;
-        padding-top: 30px;
         
 `
 

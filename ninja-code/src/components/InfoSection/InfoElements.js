@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import svgImg from '../../img/img_personal.jpg';
 import {Link as LinkR } from 'react-router-dom'
-import {Link as LinkS } from 'react-scroll'
+
 
 
 export const InfoContainer = styled.div`
