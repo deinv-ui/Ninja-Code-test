@@ -10,13 +10,24 @@ export const Cardsec = styled.div`
 
 `
 export const Cardh1 = styled.div`
-
+    align-items: center;
+    text-alignment: center;
+    font-size: 45px;
+    margin-top: 40px;
+    margin-left: 500px;
 
 `
+export const Cardh2 = styled.div`
+    align-items: center;
+    text-alignment: center;
+    font-size: 35px;
+    margin-top: 40px;
+    // margin-left: 500px;
 
+`
 export const Card = styled.div`
     margin-top: 100px;
-
+    margin-left: 30px;
 `
 
 export const Imgwrap = styled.div`

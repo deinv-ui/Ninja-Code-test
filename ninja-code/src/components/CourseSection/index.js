@@ -1,7 +1,11 @@
 import React from 'react'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { Cardsec, Cardh1, Card, Imgwrap,SecondImgwrap,ThirdImgwrap } from './CourseElements';
+import { Cardsec, Cardh1, Card, Imgwrap,SecondImgwrap,ThirdImgwrap, Cardh2 } from './CourseElements';
+import {FaBars} from 'react-icons/fa'
+import {Nav, NavbarContainer, NavLogo, MobileIcon, 
+  NavMenu, NavItems, NavLinks, NavBtn, NavBtnLink, NavRegister } from '../navbar/NavbarElements';
+import { animateScroll as scroll } from 'react-scroll';
 
 const Course = () => {
     const responsive = {
@@ -23,25 +27,59 @@ const Course = () => {
           items: 1
         }
       }
+
+
   return (
     <>
+     <Nav>
+        <NavbarContainer>
+          <NavLogo to='/'>
+           NINJA CODE
+          </NavLogo>
+         
+
+           {/*Container for actual menu items*/}
+          <NavMenu>
+            <NavItems>
+              <NavLinks to="about">About</NavLinks>
+            </NavItems>
+
+            <NavItems>
+              <NavLinks to="/Course">Courses</NavLinks>
+            </NavItems>
+
+            
+            <NavItems>
+              <NavLinks to="review">Review</NavLinks>
+            </NavItems>
+
+          </NavMenu>
+          
+              <NavRegister to="/Register">Don't have an account?</NavRegister>
+           
+          <NavBtn>
+            <NavBtnLink to="/Login">Log In</NavBtnLink>
+          </NavBtn>
+        </NavbarContainer>
+      </Nav>
+    
     <Cardsec>
         <Cardh1>Courses</Cardh1>
         <Carousel responsive={responsive}>
             <Card>
+            <Cardh2>Fundamentals</Cardh2>
             <Imgwrap ></Imgwrap>
             </Card>
             <Card>
-            <SecondImgwrap></SecondImgwrap>
+            <Cardh2>Python</Cardh2>
+            <SecondImgwrap>  <NavLinks to="/Python">Click Here</NavLinks></SecondImgwrap>
             </Card>
             <Card>
+            <Cardh2>Java</Cardh2>
             <ThirdImgwrap></ThirdImgwrap>
             </Card>
             
-            <div>Item 1</div>
-            <div>Item 2</div>
-            <div>Item 3</div>
-            <div>Item 4</div>
+            
             
         
         </Carousel>  
@@ -50,4 +88,4 @@ const Course = () => {
   )
 }
 
-export default Course
+export default Course;

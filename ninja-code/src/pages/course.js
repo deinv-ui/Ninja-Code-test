@@ -5,6 +5,7 @@ const CoursePage = () => {
   return (
     <>
       <Course/>
+     
     </>
   )
 }
