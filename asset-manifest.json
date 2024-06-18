@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ninja-code/static/css/main.2d9f7f3a.css",
-    "main.js": "/ninja-code/static/js/main.ff2a932b.js",
+    "main.js": "/ninja-code/static/js/main.d2934f87.js",
     "static/media/java.jpg": "/ninja-code/static/media/java.8f4c4843d0e6fa19de02.jpg",
     "static/media/python1.jpg": "/ninja-code/static/media/python1.e7eace928a51f9cf59eb.jpg",
     "static/media/Heroimg4.jpg": "/ninja-code/static/media/Heroimg4.915d482a1d3cf4c5a478.jpg",
@@ -12,10 +12,10 @@
     "static/media/revicons.woff": "/ninja-code/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/ninja-code/index.html",
     "main.2d9f7f3a.css.map": "/ninja-code/static/css/main.2d9f7f3a.css.map",
-    "main.ff2a932b.js.map": "/ninja-code/static/js/main.ff2a932b.js.map"
+    "main.d2934f87.js.map": "/ninja-code/static/js/main.d2934f87.js.map"
   },
   "entrypoints": [
     "static/css/main.2d9f7f3a.css",
-    "static/js/main.ff2a932b.js"
+    "static/js/main.d2934f87.js"
   ]
 }
