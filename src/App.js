@@ -11,7 +11,7 @@ import PythonPage from './pages/python';
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
      <Routes>
         <Route path='/' element={<Home/>} exact/>
         <Route path='/login' element={<LoginPage/>} exact/>
