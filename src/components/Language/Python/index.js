@@ -1,19 +1,16 @@
 import React from 'react'
-import { SideBarContainer, Icon,  CloseIcon, 
+import { SideBarContainer, 
     SideBarWrapper,
     SideBarMenu,
     SideBarLink,
-    SideBtnWrapper,
-    SideBarRoute,
-    Content,
     Contenth1,
     Contentp } from '../LanguageElements';
-
 import Navbar from '../../navbar';
 
 const Python = () => {
   return (
-   <><Navbar />
+   <>
+   <Navbar />
    <SideBarContainer>
            
             <SideBarWrapper>

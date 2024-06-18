@@ -2,10 +2,7 @@ import React from 'react'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Cardsec, Cardh1, Card, Imgwrap,SecondImgwrap,ThirdImgwrap, Cardh2 } from './CourseElements';
-import {FaBars} from 'react-icons/fa'
-import {Nav, NavbarContainer, NavLogo, MobileIcon, 
-  NavMenu, NavItems, NavLinks, NavBtn, NavBtnLink, NavRegister } from '../navbar/NavbarElements';
-import { animateScroll as scroll } from 'react-scroll';
+import {Nav, NavbarContainer, NavLogo, NavMenu, NavItems, NavLinks, NavBtn, NavBtnLink, NavRegister } from '../navbar/NavbarElements';
 
 const Course = () => {
     const responsive = {
