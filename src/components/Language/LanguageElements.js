@@ -83,3 +83,13 @@ export const Content = styled.div`
 
 
 `
+
+export const Contenth1 = styled.div`
+    font-size: 45px;
+
+`
+
+export const Contentp = styled.div`
+    font-size: 20px;
+
+`
