@@ -3,6 +3,7 @@ import { SideBarContainer,
     SideBarWrapper,
     SideBarMenu,
     SideBarLink,
+    Content,
     Contenth1,
     Contentp } from '../LanguageElements';
 import Navbar from '../../navbar';

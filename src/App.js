@@ -1,7 +1,7 @@
 
 import './App.css';
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom/BrowserRouter';
 
 import Home from './pages'
 import LoginPage from './pages/login';
@@ -11,6 +11,7 @@ import PythonPage from './pages/python';
 
 function App() {
   return (
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Router>
      <Routes>
         <Route path='/' element={<Home/>} exact/>
@@ -21,6 +22,7 @@ function App() {
      </Routes>
     
     </Router>
+    </BrowserRouter>
   );
 }
 
