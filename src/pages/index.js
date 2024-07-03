@@ -3,7 +3,8 @@ import Navbar from '../components/navbar';
 import SideBar from '../components/sidebar';
 import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
-
+import FooterSection from '../components/Footer';
+import ReviewSection from '../components/ReviewSection';
 
 
 const Home = () => {
@@ -18,6 +19,8 @@ const Home = () => {
     <Navbar toggle={toggle}/>
     <HeroSection/>
     <InfoSection/>
+    <ReviewSection/>
+    <FooterSection/>
     </>
   )
 }

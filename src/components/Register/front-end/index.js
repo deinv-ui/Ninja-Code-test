@@ -7,31 +7,48 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 
-function Register (){
+const Register  = (props) => {
 
-  const [values, setValues] = useState({
-    name: '',
-    email: '',
-    password: ''
-  })
+  let history = useNavigate(); 
+  const [data, setData] = useState({
+    username: "",
+    email: "",
+    password: "",
+  });
 
-  const navigate = useNavigate();
+  const handleChange = (event) => {
+    // Update the state based on the input field's name
+    setData({ ...data, [event.target.name]: event.target.value });
+    // console.log(data)
+  };
 
-  const handleInput = (event => {
-    setValues(prev => ({ ...prev, [event.target.name]: [event.target.value] }))
-  })
-
-  const handleSubmit = (event => {
-    event.preventDefault();
-    axios.post('http://localhost:8081/register', values)
-    .then(res => 
-      {
-        console.log(res);
-        navigate('/login')
+  const handleSubmit = (event) => {
     
-    })
-    .catch(err => console.log(err));
-  })
+    event.preventDefault(); 
+       const sendData = {
+            username:data.username,
+            email:data.email,
+            password:data.password
+  }
+    console.log(sendData);
+
+    axios.post('http://localhost/insert.php',sendData)
+        .then((result)=>{
+            if (result.data.Status === 'Invalid') { 
+          alert('Invalid User');  
+            }
+        else  {
+           //props.history.push('/Dashboard')  
+           //props.history.push('/Dashboard') Redirect
+           alert('Successful Register! Please login.');
+           history(`/login`);
+        }
+      })  
+
+  
+}
+    
+  
 
   return (
     <>
@@ -42,13 +59,13 @@ function Register (){
               <Form onSubmit={handleSubmit}>
                   <FormH1>Create a new account</FormH1>
                   <FormLbl htmlFor='for'>Email</FormLbl>
-                  <FormInput onChange={handleInput} type='email' required></FormInput>
-
+                  <FormInput type="email" name="email" onChange={handleChange} value={data.email} required></FormInput>
+                  
                   <FormLbl htmlFor='for'>Username</FormLbl>
-                  <FormInput onChange={handleInput} type='username' required></FormInput>
+                  <FormInput type="text" name="username" onChange={handleChange} value={data.username} required></FormInput>
 
                   <FormLbl htmlFor='for'>Password</FormLbl>
-                  <FormInput onChange={handleInput} type='password'></FormInput>
+                  <FormInput type="password" name="password" onChange={handleChange} value={data.password}></FormInput>
                   {/* <FormLbl htmlFor='for'>Re-enter Password</FormLbl>
                   <FormInput onChange={handleInput} type='password'></FormInput> */}
 
@@ -64,6 +81,6 @@ function Register (){
   </>
 
   )
-}
 
-export default Register
+}
+export default Register;

@@ -16,18 +16,19 @@ const SideBar = ({isOpen, toggle}) => {
                 <SideBarLink to="about" onClick={toggle}>
                 About
                 </SideBarLink>
-                <SideBarLink to="course"onClick={toggle}>
+                <SideBarLink to="/Course"onClick={toggle}>
+                    
                 Course
                 </SideBarLink>
-                <SideBarLink to="review"onClick={toggle}>
+                <SideBarLink to="/"onClick={toggle}>
                 Review
                 </SideBarLink>
-                <SideBarLink to="register"onClick={toggle}>
+                <SideBarLink to="/Register"onClick={toggle}>
                 Register
                 </SideBarLink>
             </SideBarMenu>
             <SideBtnWrapper>
-                <SideBarRoute to='login'>Log In</SideBarRoute>
+                <SideBarRoute to='/Login'>Log In</SideBarRoute>
             </SideBtnWrapper>
         </SideBarWrapper>  
         </SideBarContainer>

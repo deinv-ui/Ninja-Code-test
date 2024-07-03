@@ -10,6 +10,13 @@ const Navbar = ({ toggle }) => {
    
     scroll.scrollToTop();
   };
+
+  const togglebotm = () => {
+   
+    scroll.scrollMore(900);
+  };
+
+  
   return (
     <>
       <Nav>
@@ -23,9 +30,7 @@ const Navbar = ({ toggle }) => {
 
            {/*Container for actual menu items*/}
           <NavMenu>
-            <NavItems>
-              <NavLinks to="about">About</NavLinks>
-            </NavItems>
+           
 
             <NavItems>
               <NavLinks to="/Course">Courses</NavLinks>
@@ -33,8 +38,10 @@ const Navbar = ({ toggle }) => {
 
             
             <NavItems>
-              <NavLinks to="review">Review</NavLinks>
+              <NavLinks to="/" onClick={togglebotm}>Review</NavLinks>
             </NavItems>
+
+          
 
             {/* <NavItems>
               <NavRegister to="/Register">Register</NavRegister>
